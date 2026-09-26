@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inversiones Sistema Aldebaran — Propuesta de participación</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Propuesta de participación en el portafolio de Inversiones Sistema Aldebaran, C.A.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4F4FA;
+    --surface: #FFFFFF;
+    --ink: #1B1E45;
+    --muted: #5D6090;
+    --line: #DCDDEE;
+    --star: #C9701A;
+    --star-soft: #F7E3CC;
+    --ok: #1F8A77;
+    --warn: #B4531A;
+    --sky: #1B1E45;
+    --sky-ink: #EDEBF7;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13153A;
+      --surface: #1C1F4A;
+      --ink: #EDEBF7;
+      --muted: #A3A5CE;
+      --line: #2E3268;
+      --star: #F4A340;
+      --star-soft: #3A2E3A;
+      --ok: #4FC4B0;
+      --warn: #F29A5E;
+      --sky: #0E1030;
+      --sky-ink: #EDEBF7;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #13153A;
+    --surface: #1C1F4A;
+    --ink: #EDEBF7;
+    --muted: #A3A5CE;
+    --line: #2E3268;
+    --star: #F4A340;
+    --star-soft: #3A2E3A;
+    --ok: #4FC4B0;
+    --warn: #F29A5E;
+    --sky: #0E1030;
+    --sky-ink: #EDEBF7;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.55;
+  }
+  h1, h2, h3 { font-family: "Bricolage Grotesque", "Atkinson Hyperlegible", system-ui, sans-serif; line-height: 1.12; margin: 0; }
+  h1 { font-size: clamp(2.1rem, 7vw, 3.4rem); font-weight: 800; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 700; letter-spacing: -0.01em; }
+  h3 { font-size: 1.2rem; font-weight: 700; }
+  p { margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+  section { padding: 3rem 0; border-top: 1px solid var(--line); }
+  .lead { color: var(--muted); max-width: 60ch; margin-top: .75rem; }
+  :focus-visible { outline: 3px solid var(--star); outline-offset: 3px; border-radius: 4px; }
+
+  /* Hero: el cielo nocturno con la estrella Aldebaran */
+  .hero { background: var(--sky); color: var(--sky-ink); padding: 2.5rem 0 2.75rem; }
+  .hero .brand { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 700; font-size: 1rem; opacity: .85; }
+  .hero h1 { margin-top: 1.5rem; max-width: 16ch; }
+  .hero p { margin-top: 1rem; max-width: 52ch; color: #C9CAE8; }
+  .hero-facts { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+  .fact { border: 1px solid #3A3F7E; border-radius: 999px; padding: .35rem .85rem; font-size: .9rem; color: #DADBF2; }
+
+  /* Portafolio */
+  .units { display: grid; gap: .75rem; margin-top: 1.5rem; }
+  details.unit { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  details.unit > summary { list-style: none; cursor: pointer; padding: 1rem 1.1rem; display: grid; grid-template-columns: 1fr auto; gap: .25rem .75rem; align-items: start; }
+  details.unit > summary::-webkit-details-marker { display: none; }
+  .unit-name { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 700; font-size: 1.15rem; }
+  .unit-what { grid-column: 1 / -1; color: var(--muted); font-size: .98rem; }
+  .status { font-size: .82rem; font-weight: 700; padding: .2rem .6rem; border-radius: 999px; background: var(--star-soft); color: var(--star); white-space: nowrap; }
+  .status.live { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok); }
+  .unit-body { padding: 0 1.1rem 1.1rem; display: grid; gap: .6rem; }
+  .row { display: grid; grid-template-columns: 9.5rem 1fr; gap: .75rem; font-size: .97rem; }
+  .row dt { color: var(--muted); }
+  .row dd { margin: 0; }
+  details.unit[open] > summary .chev { transform: rotate(180deg); }
+  .chev { transition: transform .2s ease; color: var(--muted); }
+
+  /* Calculadora + constelación */
+  .constellation { background: var(--sky); border-radius: 18px; margin-top: 1.5rem; overflow: hidden; }
+  .constellation svg { display: block; width: 100%; height: auto; }
+  .total-bar { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1rem 1.1rem 1.2rem; color: var(--sky-ink); flex-wrap: wrap; }
+  .total-amount { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; font-size: clamp(2rem, 8vw, 2.6rem); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+  .range-note { font-size: .95rem; color: #C9CAE8; max-width: 30ch; }
+  .range-note.ok { color: #7FE0CF; }
+  .range-note.over { color: #F7B98B; }
+
+  .sliders { display: grid; gap: 1rem; margin-top: 1rem; }
+  .slider { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem; }
+  .slider-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .slider-head h3 { font-size: 1.05rem; }
+  .slider-price { color: var(--muted); font-size: .92rem; }
+  .slider-values { display: flex; justify-content: space-between; margin-top: .5rem; font-variant-numeric: tabular-nums; }
+  .slider-values strong { font-size: 1.15rem; }
+  input[type="range"] { width: 100%; margin-top: .6rem; accent-color: var(--star); height: 2rem; }
+
+  .summary { margin-top: 1.25rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem; }
+  .summary ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+  .summary .empty { color: var(--muted); }
+
+  /* Recuperación: línea de tiempo trimestral */
+  .timeline { list-style: none; margin: 1.5rem 0 0; padding: 0; position: relative; }
+  .timeline::before { content: ""; position: absolute; left: .7rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--line); }
+  .timeline li { position: relative; padding: 0 0 1.25rem 2.4rem; }
+  .timeline li::before { content: ""; position: absolute; left: .3rem; top: .35rem; width: .9rem; height: .9rem; border-radius: 50%; background: var(--surface); border: 2px solid var(--star); }
+  .timeline li.key::before { background: var(--star); box-shadow: 0 0 0 5px var(--star-soft); }
+  .timeline .when { font-weight: 700; }
+  .timeline .what { color: var(--muted); font-size: .98rem; }
+
+  /* Hitos */
+  .milestones { display: grid; gap: .6rem; margin-top: 1.5rem; }
+  .milestone { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; padding: .8rem 0; border-bottom: 1px solid var(--line); }
+  .milestone:last-child { border-bottom: 0; }
+  .milestone .date { font-weight: 700; color: var(--star); }
+
+  /* Acción */
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+  .btn { font: inherit; font-weight: 700; border-radius: 12px; padding: .85rem 1.2rem; min-height: 48px; cursor: pointer; border: 2px solid var(--star); text-decoration: none; display: inline-flex; align-items: center; }
+  .btn.primary { background: var(--star); color: #1B1E45; }
+  .btn.secondary { background: transparent; color: var(--ink); }
+  .btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+  .toast { margin-top: .75rem; color: var(--ok); min-height: 1.5rem; font-size: .95rem; }
+
+  .seg { display: inline-flex; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 4px; margin-top: 1.25rem; gap: 4px; }
+  .seg button { font: inherit; font-size: .95rem; font-weight: 700; border: 0; background: transparent; color: var(--muted); padding: .55rem .9rem; border-radius: 9px; cursor: pointer; min-height: 44px; }
+  .seg button[aria-pressed="true"] { background: var(--star); color: #1B1E45; }
+  .proj { display: grid; gap: .6rem; margin-top: 1rem; }
+  .proj-item { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: .9rem 1rem; }
+  .proj-nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; margin-top: .6rem; }
+  .proj-nums .k { color: var(--muted); font-size: .8rem; line-height: 1.25; }
+  .proj-nums .v { font-weight: 700; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+  .table-wrap { overflow-x: auto; margin-top: 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+  table { border-collapse: collapse; width: 100%; min-width: 480px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: .75rem .9rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: .88rem; color: var(--muted); font-weight: 700; }
+  td.num, th.num { text-align: right; white-space: nowrap; }
+  tr:last-child td { border-bottom: 0; }
+  .assume { display: block; color: var(--muted); font-size: .85rem; margin-top: .2rem; }
+  .slider-est { color: var(--muted); font-size: .92rem; margin-top: .35rem; }
+  .ret-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; margin-top: .9rem; }
+  .ret { border: 1px solid var(--line); border-radius: 12px; padding: .75rem .85rem; }
+  .ret .k { color: var(--muted); font-size: .88rem; }
+  .ret .v { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 700; font-size: 1.35rem; font-variant-numeric: tabular-nums; }
+  .progress { height: 10px; border-radius: 999px; background: var(--line); margin-top: .9rem; overflow: hidden; }
+  .progress > div { height: 100%; background: var(--ok); width: 0; transition: width .25s ease; }
+  .fine { color: var(--muted); font-size: .88rem; margin-top: .75rem; }
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); }
+
+  @media (max-width: 480px) {
+    .row { grid-template-columns: 1fr; gap: .1rem; }
+    .milestone { grid-template-columns: 1fr; gap: .1rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">Inversiones Sistema Aldebaran, C.A.</div>
+    <h1>Cinco negocios digitales para el comercio venezolano</h1>
+    <p>Una compañía tecnológica con productos propios para restaurantes, tiendas, comercios de repuestos y trabajadores de servicio. Esta página te muestra en qué estamos, cuánto cuesta participar y cómo recuperas tu inversión.</p>
+    <div class="hero-facts">
+      <span class="fact">Sociedad registrada en Caracas</span>
+      <span class="fact">Liquidación trimestral</span>
+      <span class="fact">Capital protegido a 18 meses</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="portafolio">
+    <div class="wrap">
+      <h2>El portafolio</h2>
+      <p class="lead">Toca cada negocio para ver su estado, cómo gana dinero y su próximo paso.</p>
+      <div class="units" id="units"></div>
+    </div>
+  </section>
+
+  <section id="proyecciones">
+    <div class="wrap">
+      <h2>Cuánto puede generar cada proyecto</h2>
+      <p class="lead">Utilidad mensual estimada de cada proyecto según las metas de la compañía, promediada en los primeros 18 meses, y lo que te toca por cada 1% de participación. Elige un escenario.</p>
+      <div class="seg" role="group" aria-label="Escenario de proyección" data-seg></div>
+      <div class="proj" id="projBody"></div>
+      <p class="fine">Proyecciones estimadas, no garantizadas. Descuentan el 5% de reserva legal que la ley exige apartar antes de repartir utilidades. Lo único garantizado es la cobertura de tu capital al mes 18.</p>
+    </div>
+  </section>
+
+  <section id="participacion">
+    <div class="wrap">
+      <h2>Arma tu participación</h2>
+      <p class="lead">Mueve cada barra para elegir qué porcentaje quieres de cada proyecto. Cada estrella crece con tu aporte, y abajo ves cuánto podrías recibir.</p>
+
+      <div class="constellation" aria-hidden="true">
+        <svg id="sky" viewBox="0 0 360 200" role="img"></svg>
+        <div class="total-bar">
+          <div>
+            <div style="font-size:.9rem;color:#C9CAE8">Tu inversión total</div>
+            <div class="total-amount" id="total">$0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seg" role="group" aria-label="Escenario de proyección" data-seg></div>
+      <div class="sliders" id="sliders"></div>
+
+      <div class="summary" aria-live="polite">
+        <h3>Tu selección</h3>
+        <div id="summary"><p class="empty">Todavía no elegiste ningún porcentaje.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="retorno">
+    <div class="wrap">
+      <h2>Cómo recuperas tu inversión</h2>
+      <p class="lead">Cada trimestre recibes tu porcentaje de las utilidades de cada proyecto en el que participas. Si al mes 18 lo recibido no suma tu capital, Sistema Aldebaran cubre la diferencia.</p>
+      <ol class="timeline" id="timeline"></ol>
+    </div>
+  </section>
+
+  <section id="hitos">
+    <div class="wrap">
+      <h2>Próximos hitos</h2>
+      <p class="lead">Fechas que ya tenemos en agenda.</p>
+      <div class="milestones">
+        <div class="milestone"><div class="date">Octubre 2026</div><div>Firma de contratos de participación con los primeros inversionistas.</div></div>
+        <div class="milestone"><div class="date">12 oct 2026</div><div>Relanzamiento de Terraza Gourmet en el C.C. City Market, con visita a los restaurantes de la feria.</div></div>
+        <div class="milestone"><div class="date">Octubre 2026</div><div>Registro y publicación de Leal Club en App Store y Google Play.</div></div>
+        <div class="milestone"><div class="date">Al firmar con el banco</div><div>Inicio de pruebas de PropiPay con el SDK del terminal Kubito.</div></div>
+        <div class="milestone"><div class="date">En curso</div><div>Expansión del marketplace de Vexbiz en la Gran Caracas.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="siguiente">
+    <div class="wrap">
+      <h2>Siguiente paso</h2>
+      <p class="lead">Envíame tu selección y agendamos una llamada para revisar los términos del contrato.</p>
+      <div class="actions">
+        <a class="btn primary" id="waBtn" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar mi selección por WhatsApp</a>
+        <button class="btn secondary" id="copyBtn" type="button">Copiar resumen</button>
+      </div>
+      <div class="toast" id="toast" role="status"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Propuesta informativa de Inversiones Sistema Aldebaran, C.A. Las proyecciones son estimaciones basadas en los supuestos indicados y no constituyen una garantía de rendimiento. Los montos, porcentajes y condiciones finales se formalizan en un contrato de participación firmado por ambas partes.
+  </div>
+</footer>
+
+<script>
+/* ============ CONFIGURACIÓN: edita precios y textos aquí ============ */
+const UNITS = [
+  {
+    id: "terraza", name: "Terraza Gourmet", invest: true,
+    pricePer1: 200, maxPct: 20, x: 70, y: 120,
+    proj: { cons: 2700, base: 4800, opt: 7900 },
+    assume: { cons: "25 restaurantes promedio, 25 pedidos al día c/u", base: "35 restaurantes promedio en 3 centros comerciales, 35 pedidos al día c/u", opt: "45 restaurantes promedio, 50 pedidos al día c/u" },
+    what: "Pedidos en línea con 6% de descuento para los trabajadores del centro comercial.",
+    status: "Piloto en operación", live: true,
+    rows: [
+      ["Dónde", "C.C. City Market, Sabana Grande. terrazagourmetcm.com"],
+      ["Cómo gana", "$50 al mes por restaurante afiliado y $0.10 por cada pedido."],
+      ["Hoy", "Plataforma en producción con 1 restaurante activo."],
+      ["Próximo paso", "Relanzamiento el 12 de octubre para afiliar al resto de la feria de comida."],
+      ["Meta a marzo 2027", "3 centros comerciales y entre 40 y 60 restaurantes afiliados."],
+      ["Participación de Aldebaran", "100%"]
+    ]
+  },
+  {
+    id: "leal", name: "Leal Club", invest: true,
+    pricePer1: 150, maxPct: 45, x: 150, y: 55,
+    proj: { cons: 1000, base: 1800, opt: 2750 },
+    assume: { cons: "100 comercios promedio, 10% con pantalla", base: "167 comercios promedio (meta: 200 a marzo 2027), 20% con pantalla", opt: "250 comercios promedio, 30% con pantalla" },
+    what: "Programa de puntos y recompensas para cualquier comercio, en una sola app.",
+    status: "Lista para publicar", live: false,
+    rows: [
+      ["Cómo gana", "$10 al mes o $100 al año por comercio. Pantalla de mostrador opcional a $160."],
+      ["Antifraude", "Código QR que cambia cada 60 segundos para que nadie copie los puntos."],
+      ["Hoy", "Plataforma construida. En proceso de registro en App Store y Google Play."],
+      ["Equipos", "Pantallas Android compradas en Alibaba con envío vía Miami."],
+      ["Meta a marzo 2027", "200 comercios suscritos y 20% de ellos con pantalla de mostrador."],
+      ["Uso de tu inversión", "Compra del primer lote de pantallas en China."],
+      ["Participación de Aldebaran", "100%"]
+    ]
+  },
+  {
+    id: "propipay", name: "PropiPay", invest: true,
+    pricePer1: 300, maxPct: 5, x: 250, y: 50,
+    proj: { cons: 117, base: 390, opt: 1170 },
+    assume: { cons: "15 terminales activos, tarifa supuesta $0.30/día", base: "50 terminales activos", opt: "150 terminales activos" },
+    what: "Propinas con tarjeta en un terminal de bolsillo, con reparto automático entre el equipo.",
+    status: "En integración bancaria", live: false,
+    rows: [
+      ["Cómo funciona", "El cliente paga la propina con tarjeta en el Kubito. El dinero llega directo a la cuenta del comercio y PropiPay calcula cuánto le toca a cada trabajador."],
+      ["Seguridad", "Auditoría externa de seguridad completada en agosto de 2026."],
+      ["Hoy", "Esperando el contrato del banco aliado para recibir el SDK e iniciar pruebas."],
+      ["Tarifa", "En definición con el banco."],
+      ["Participación de Aldebaran", "30%"]
+    ]
+  },
+  {
+    id: "vexbiz", name: "Vexbiz", invest: true,
+    pricePer1: 600, maxPct: 5, x: 295, y: 130,
+    proj: { cons: 500, base: 10300, opt: 21700 },
+    assume: { cons: "Marketplace sin franquicias vendidas", base: "Marketplace + 1 franquicia de $150,000 en 18 meses", opt: "Marketplace + 2 franquicias de $150,000 en 18 meses" },
+    what: "Marketplace de repuestos y suministros técnicos para tiendas, talleres y técnicos.",
+    status: "En lanzamiento", live: true,
+    rows: [
+      ["Dónde", "vexbiz.com y el marketplace en ve.vexbiz.com"],
+      ["Cómo gana", "Comisión sobre las ventas del marketplace."],
+      ["Hoy", "Más de 20 tiendas aliadas y más de 25,000 productos cargados. Expansión activa en Caracas."],
+      ["Franquicias", "Cada franquicia de ciudad se estima entre $100,000 y $200,000. Aún no hay franquicias vendidas."],
+      ["Participación de Aldebaran", "15% (el 5% ofrecido sale de esta participación)"]
+    ]
+  },
+  {
+    id: "labs", name: "Aldebaran Labs", invest: true,
+    pricePer1: 200, maxPct: 20, x: 200, y: 165,
+    proj: { cons: 1200, base: 3200, opt: 8000 },
+    assume: { cons: "4 servicios al mes a $300 promedio + venta de equipos", base: "6 servicios al mes a $450 + cursos + venta de equipos", opt: "10 servicios al mes a $600 + cursos + venta de equipos" },
+    what: "Servicios tecnológicos, e-commerce y venta de equipos: paneles solares, Starlink y cámaras de seguridad.",
+    status: "Servicios y comercio", live: true,
+    rows: [
+      ["Servicios", "Automatización de negocios, catálogos digitales, tiendas e-commerce y las herramientas, skills y conexiones de IA más útiles del momento."],
+      ["Equipos", "Compra y venta de paneles solares, kits Starlink y cámaras de seguridad, con proveedores autorizados ya en contacto."],
+      ["Formación", "Coaching para personas que empiezan a trabajar con inteligencia artificial."],
+      ["Cómo gana", "Servicios de $150 a $1,000 según el proyecto, tiendas e-commerce, margen en la venta de equipos, cursos y coaching."],
+      ["Participación de Aldebaran", "100%"]
+    ]
+  }
+];
+const TARGET_MIN = 3000, TARGET_MAX = 6000;
+const LEGAL_RESERVE = 0.05;
+const SCENARIOS = [["cons", "Conservador"], ["base", "Base"], ["opt", "Optimista"]];
+let scenario = "base";
+const HOLDING = { x: 200, y: 100 };
+/* ==================================================================== */
+
+const fmt = n => "$" + Math.round(n).toLocaleString("en-US");
+const pctState = {};
+UNITS.forEach(u => { if (u.invest) pctState[u.id] = 0; });
+
+function renderUnits() {
+  const box = document.getElementById("units");
+  box.innerHTML = UNITS.map(u => `
+    <details class="unit">
+      <summary>
+        <span class="unit-name">${u.name}</span>
+        <span class="status ${u.live ? "live" : ""}">${u.status}</span>
+        <span class="unit-what">${u.what}</span>
+      </summary>
+      <dl class="unit-body">
+        ${u.rows.map(([k, v]) => `<div class="row"><dt>${k}</dt><dd>${v}</dd></div>`).join("")}
+      </dl>
+    </details>`).join("");
+}
+
+function renderSliders() {
+  const box = document.getElementById("sliders");
+  box.innerHTML = UNITS.filter(u => u.invest).map(u => `
+    <div class="slider">
+      <div class="slider-head">
+        <h3><label for="r-${u.id}">${u.name}</label></h3>
+        <span class="slider-price">${fmt(u.pricePer1)} por cada 1%, hasta ${u.maxPct}%</span>
+      </div>
+      <input type="range" id="r-${u.id}" min="0" max="${u.maxPct}" step="1" value="0"
+             aria-describedby="v-${u.id}">
+      <div class="slider-values" id="v-${u.id}">
+        <span><strong>0%</strong> del proyecto</span><span><strong>$0</strong></span>
+      </div>
+      <div class="slider-est" id="e-${u.id}"></div>
+    </div>`).join("");
+  UNITS.filter(u => u.invest).forEach(u => {
+    document.getElementById("r-" + u.id).addEventListener("input", e => {
+      pctState[u.id] = Number(e.target.value);
+      update();
+    });
+  });
+}
+
+function drawSky() {
+  const svg = document.getElementById("sky");
+  const bgStars = Array.from({ length: 40 }, (_, i) => {
+    const x = (i * 83) % 360, y = (i * 47) % 200, r = (i % 3) * 0.35 + 0.4;
+    return `<circle cx="${x}" cy="${y}" r="${r}" fill="#EDEBF7" opacity="${0.25 + (i % 4) * 0.12}"/>`;
+  }).join("");
+  const lines = UNITS.map(u => `<line x1="${HOLDING.x}" y1="${HOLDING.y}" x2="${u.x}" y2="${u.y}" stroke="#3A3F7E" stroke-width="1"/>`).join("");
+  const stars = UNITS.map(u => `
+    <g>
+      <circle id="glow-${u.id}" cx="${u.x}" cy="${u.y}" r="0" fill="#F4A340" opacity=".18"/>
+      <circle id="star-${u.id}" cx="${u.x}" cy="${u.y}" r="4" fill="${u.invest ? "#EDEBF7" : "#8E91C4"}"/>
+      <text id="lbl-${u.id}" x="${u.x}" y="${u.y + 16}" text-anchor="middle" fill="#C9CAE8" font-size="10" font-family="Atkinson Hyperlegible, sans-serif">${u.name}</text>
+    </g>`).join("");
+  const core = `<circle cx="${HOLDING.x}" cy="${HOLDING.y}" r="14" fill="#F4A340" opacity=".2"/><circle cx="${HOLDING.x}" cy="${HOLDING.y}" r="7" fill="#F4A340"/>`;
+  svg.innerHTML = bgStars + lines + core + stars;
+}
+
+function update() {
+  let total = 0;
+  const picks = [];
+  UNITS.filter(u => u.invest).forEach(u => {
+    const pct = pctState[u.id], amt = pct * u.pricePer1;
+    total += amt;
+    if (pct > 0) picks.push({ u, pct, amt });
+    const perMonth = monthlyDiv(u, pct);
+    document.getElementById("e-" + u.id).textContent = pct > 0
+      ? `≈ ${fmt(perMonth * 3)} al trimestre en el escenario ${scenarioName()}`
+      : `Cada 1% ≈ ${fmt(monthlyDiv(u, 1) * 3)} al trimestre en el escenario ${scenarioName()}`;
+    document.getElementById("v-" + u.id).innerHTML =
+      `<span><strong>${pct}%</strong> del proyecto</span><span><strong>${fmt(amt)}</strong></span>`;
+    const r = Math.min(4 + Math.sqrt(amt) * 0.24, 24);
+    const star = document.getElementById("star-" + u.id);
+    star.setAttribute("r", r.toFixed(1));
+    star.setAttribute("fill", amt > 0 ? "#F4A340" : "#EDEBF7");
+    document.getElementById("glow-" + u.id).setAttribute("r", amt > 0 ? (r * 2).toFixed(1) : 0);
+    document.getElementById("lbl-" + u.id).setAttribute("y", (u.y + r + 12).toFixed(1));
+  });
+
+  document.getElementById("total").textContent = fmt(total);
+
+  const monthly = picks.reduce((s, p) => s + monthlyDiv(p.u, p.pct), 0);
+  const eighteen = monthly * 18;
+  const covered = Math.max(0, total - eighteen);
+  const recoverMonth = monthly > 0 ? Math.ceil(total / monthly) : null;
+  const pctBack = total > 0 ? Math.min(100, eighteen / total * 100) : 0;
+  const sum = document.getElementById("summary");
+  sum.innerHTML = picks.length
+    ? `<ul>${picks.map(p => `<li>${p.pct}% de ${p.u.name}: ${fmt(p.amt)}</li>`).join("")}</ul>
+       <div class="ret-grid">
+         <div class="ret"><div class="k">Invertido</div><div class="v">${fmt(total)}</div></div>
+         <div class="ret"><div class="k">Dividendo estimado al trimestre</div><div class="v">${fmt(monthly * 3)}</div></div>
+         <div class="ret"><div class="k">Estimado en 18 meses</div><div class="v">${fmt(eighteen)}</div></div>
+         <div class="ret"><div class="k">${covered > 0 ? "Aldebaran cubre al mes 18" : "Recuperas tu capital en"}</div><div class="v">${covered > 0 ? fmt(covered) : "el mes " + recoverMonth}</div></div>
+       </div>
+       <div class="progress" aria-label="Capital recuperado con dividendos"><div style="width:${pctBack.toFixed(0)}%"></div></div>
+       <p class="fine">Escenario ${scenarioName()}: los dividendos recuperan el ${pctBack.toFixed(0)}% de tu capital en 18 meses${covered > 0 ? " y la salvaguarda cubre el resto" : ""}. Después del mes 18 conservas tus porcentajes y sigues cobrando.</p>`
+    : `<p class="empty">Todavía no elegiste ningún porcentaje.</p>`;
+
+  const wa = document.getElementById("waBtn");
+  if (picks.length) {
+    wa.href = "https://wa.me/?text=" + encodeURIComponent(summaryText(picks, total));
+    wa.setAttribute("aria-disabled", "false");
+  } else {
+    wa.href = "#";
+    wa.setAttribute("aria-disabled", "true");
+  }
+  renderTimeline(total);
+}
+
+function monthlyDiv(u, pct) { return u.proj[scenario] * (pct / 100) * (1 - LEGAL_RESERVE); }
+function scenarioName() { return SCENARIOS.find(x => x[0] === scenario)[1].toLowerCase(); }
+
+function renderSeg() {
+  document.querySelectorAll("[data-seg]").forEach(box => {
+    box.innerHTML = SCENARIOS.map(([k, n]) =>
+      `<button type="button" data-k="${k}" aria-pressed="${k === scenario}">${n}</button>`).join("");
+    box.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+      scenario = b.dataset.k; renderSeg(); renderProj(); update();
+    }));
+  });
+}
+
+function renderProj() {
+  document.getElementById("projBody").innerHTML = UNITS.filter(u => u.invest).map(u => `
+    <div class="proj-item">
+      <strong>${u.name}</strong><span class="assume">${u.assume[scenario]}</span>
+      <div class="proj-nums">
+        <div><div class="k">Utilidad del proyecto/mes</div><div class="v">${fmt(u.proj[scenario])}</div></div>
+        <div><div class="k">Cada 1% al trimestre</div><div class="v">${fmt(monthlyDiv(u, 1) * 3)}</div></div>
+        <div><div class="k">Cada 1% en 18 meses</div><div class="v">${fmt(monthlyDiv(u, 1) * 18)}</div></div>
+      </div>
+    </div>`).join("");
+}
+
+function summaryText(picks, total) {
+  return "Mi selección para Inversiones Sistema Aldebaran:\n" +
+    picks.map(p => `- ${p.pct}% de ${p.u.name}: ${fmt(p.amt)}`).join("\n") +
+    `\nTotal: ${fmt(total)}\nDividendo estimado (escenario ${scenarioName()}): ${fmt(picks.reduce((s, p) => s + monthlyDiv(p.u, p.pct), 0) * 3)} al trimestre\nLiquidación trimestral, capital protegido a 18 meses.`;
+}
+
+function renderTimeline(total) {
+  const t = total > 0 ? fmt(total) : "tu capital";
+  const steps = [
+    ["Firma", "Contrato de participación, desembolso y registro de tus porcentajes."],
+    ["Mes 3", "Primera liquidación trimestral de utilidades."],
+    ["Mes 6", "Segunda liquidación."],
+    ["Mes 9", "Tercera liquidación."],
+    ["Mes 12", "Cuarta liquidación y reporte anual de cada proyecto."],
+    ["Mes 15", "Quinta liquidación."],
+    ["Mes 18", `Sexta liquidación. Si lo recibido no suma ${t}, Sistema Aldebaran cubre la diferencia.`, true],
+    ["Después", "Evaluamos juntos renovar el contrato o ampliar tu participación."]
+  ];
+  document.getElementById("timeline").innerHTML = steps.map(([w, d, key]) =>
+    `<li class="${key ? "key" : ""}"><div class="when">${w}</div><div class="what">${d}</div></li>`).join("");
+}
+
+document.getElementById("copyBtn").addEventListener("click", async () => {
+  const picks = UNITS.filter(u => u.invest && pctState[u.id] > 0)
+    .map(u => ({ u, pct: pctState[u.id], amt: pctState[u.id] * u.pricePer1 }));
+  const toast = document.getElementById("toast");
+  if (!picks.length) { toast.textContent = "Elige al menos un porcentaje para copiar el resumen."; return; }
+  const total = picks.reduce((s, p) => s + p.amt, 0);
+  const text = summaryText(picks, total);
+  try { await navigator.clipboard.writeText(text); toast.textContent = "Resumen copiado."; }
+  catch (e) {
+    const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta);
+    ta.select(); try { document.execCommand("copy"); toast.textContent = "Resumen copiado."; }
+    catch (e2) { toast.textContent = "No se pudo copiar. Usa el botón de WhatsApp."; }
+    ta.remove();
+  }
+});
+
+renderUnits();
+renderSeg();
+renderProj();
+renderSliders();
+drawSky();
+update();
+</script>
+</body>
+</html>
